@@ -1,19 +1,16 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
+ - main
 
-pool:
-  vmImage: ubuntu-latest
+ pool:
+   vmImage: 'ubuntu-latest'
 
-steps:
-- script: docker ps
-  displayName: 'Check if we have docker and is it running'
+ variables:
+   imageName: 'pipelines-javascript-docker'
 
-- script: |
-    echo If you got this far, you have docker
-    echo (The docs say: See https://aka.ms/yaml for more details about what you can do here)
-  displayName: 'Run a multi-line script'
+ steps:
+ - task: Docker@2
+   displayName: Build an image
+   inputs:
+     repository: $(imageName)
+     command: build
+     Dockerfile: app/Dockerfile
