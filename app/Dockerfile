@@ -19,7 +19,7 @@ RUN echo "America/New_York" > /etc/timezone
 RUN unlink /etc/localtime
 RUN dpkg-reconfigure -f noninteractive tzdata
 
-RUN mkdir ${APPDIR}
+# RUN mkdir ${APPDIR}
 WORKDIR ${APPDIR}
 
 # RVM_USER is permitted to create files
