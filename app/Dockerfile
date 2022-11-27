@@ -22,8 +22,8 @@ RUN dpkg-reconfigure -f noninteractive tzdata
 # RUN mkdir ${APPDIR}
 WORKDIR ${APPDIR}
 
-# RVM_USER is permitted to create files
-RUN chown ${RVM_USER} ${APPDIR}
+# RVM_USER is permitted to create and update files
+RUN chown -R ${RVM_USER} ${APPDIR}
 USER ${RVM_USER}
 ENV RUBY=3.1.3
 
