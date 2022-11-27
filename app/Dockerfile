@@ -1,5 +1,5 @@
 ARG RVM_RUBY_VERSIONS="3.1.3"
-FROM kingdonb/docker-rvm:20221125
+FROM kingdonb/rvm-ruby3:e9eab721
 LABEL maintainer="Kingdon Barrett <kingdon@weave.works>"
 ENV APPDIR="/home/${RVM_USER}/app"
 # ENV SCHEMA="sqlite.schema"
