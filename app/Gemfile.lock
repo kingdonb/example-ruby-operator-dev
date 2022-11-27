@@ -1,0 +1,103 @@
+GIT
+  remote: https://github.com/beeminder/beeminder-gem.git
+  revision: 77b80ff036dec84e034bc107a076788c537c7b45
+  specs:
+    beeminder (0.2.12)
+      activesupport (>= 3.2, < 7)
+      chronic (~> 0.7)
+      highline (~> 1.6)
+      json
+      optimist (~> 3)
+      tzinfo
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (6.1.7)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
+    awesome_print (1.9.2)
+    chronic (0.10.2)
+    concurrent-ruby (1.1.10)
+    crack (0.4.5)
+      rexml
+    diff-lcs (1.5.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    fiber_scheduler (0.13.0)
+    hashdiff (1.0.1)
+    highline (1.7.10)
+    http-accept (1.7.0)
+    http-cookie (1.0.5)
+      domain_name (~> 0.5)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    json (2.6.2)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2022.0105)
+    minitest (5.16.3)
+    netrc (0.11.0)
+    optimist (3.0.1)
+    public_suffix (5.0.0)
+    rake (13.0.6)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rexml (3.2.5)
+    rspec (3.12.0)
+      rspec-core (~> 3.12.0)
+      rspec-expectations (~> 3.12.0)
+      rspec-mocks (~> 3.12.0)
+    rspec-core (3.12.0)
+      rspec-support (~> 3.12.0)
+    rspec-expectations (3.12.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-mocks (3.12.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-support (3.12.0)
+    rspec_junit_formatter (0.6.0)
+      rspec-core (>= 2, < 4, != 2.12.0)
+    sequel (5.62.0)
+    thor (1.2.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.8.2)
+    webmock (3.18.1)
+      addressable (>= 2.8.0)
+      crack (>= 0.3.2)
+      hashdiff (>= 0.4.0, < 2.0.0)
+    zeitwerk (2.6.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport (~> 6.0)
+  awesome_print
+  beeminder!
+  fiber_scheduler
+  rake
+  rest-client
+  rspec (~> 3.0)
+  rspec_junit_formatter
+  sequel
+  thor
+  webmock
+
+RUBY VERSION
+   ruby 3.1.2p20
+
+BUNDLED WITH
+   2.3.4
