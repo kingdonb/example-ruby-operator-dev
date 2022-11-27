@@ -5,6 +5,8 @@ ENV APPDIR="/home/${RVM_USER}/app"
 # ENV SCHEMA="sqlite.schema"
 # ENV STATE="xyzgraph.sqlite"
 
+USER root
+
 # install some convenience utils in case this image gets used as dev
 RUN apt-get update && apt-get install -y --no-install-recommends \
   manpages vim-tiny && apt-get clean && rm -rf /var/lib/apt/lists/*
